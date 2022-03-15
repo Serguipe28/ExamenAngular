@@ -1,0 +1,24 @@
+<p>pacientes works!</p>
+
+
+<table class="table table-dark table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Fecha de nacimiento</th>
+        <th scope="col">Foto</th>
+        <th scope="col">MedicoID</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of pacientes">
+        <th scope="row">{{ p.ID }}</th>
+        <td>{{ p.Nombre }}</td>
+        <td>{{ p.FNac | date:"dd/MM/yyyy"}}</td>
+        <td><img src="../../assets/Imagenes/Pacientes/{{p.Foto}}" height="100px"></td>
+        <td>{{ p.MedicoID }}</td>
+      </tr>
+    </tbody>
+  </table>
+

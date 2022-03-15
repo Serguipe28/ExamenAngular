@@ -1,0 +1,20 @@
+<p>hospitales works!</p>
+
+<table class="table table-dark table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Direccion</th>
+      <th scope="col">NumCamas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let h of hospitales">
+      <th scope="row">{{ h.ID }}</th>
+      <td>{{ h.Nombre }}</td>
+      <td>{{ h.Direccion }}</td>
+      <td>{{ h.NumCamas }}</td>
+    </tr>
+  </tbody>
+</table>

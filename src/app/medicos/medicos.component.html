@@ -1,0 +1,23 @@
+<p>medicos works!</p>
+
+
+<table class="table table-dark table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Especialidad</th>
+        <th scope="col">Foto</th>
+        <th scope="col">HospitalID</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let m of medicos">
+        <th scope="row">{{ m.ID }}</th>
+        <td>{{ m.Nombre }}</td>
+        <td>{{ m.Especialidad }}</td>
+        <td><img src="../../assets/Imagenes/Medicos/{{m.Foto}}" width="100px" ></td>
+        <td>{{ m.HospitalID }}</td>
+      </tr>
+    </tbody>
+  </table>

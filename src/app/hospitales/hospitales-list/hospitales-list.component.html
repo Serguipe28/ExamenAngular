@@ -1,0 +1,14 @@
+<label for="hospitales">Selecciona un hospital: </label>
+
+
+<select class="form-select" aria-label="Default select example" name="hospitales" id="hospitales" [(ngModel)]=" hospitalesSelected" (change)="onChange()">
+    <ng-container *ngFor="let h of hospitalesList">
+        <option value="{{ h.ID}}"> {{ h.Nombre }}</option>
+    </ng-container>
+</select>
+
+<div>
+    Numero de medicos: {{resultado}}
+</div>
+
+
